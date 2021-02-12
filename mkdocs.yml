@@ -1,0 +1,44 @@
+site_name: Analyzer
+
+nav:
+  - Главная: index.md
+  - Техническое задание: specification.md
+  - Введение: intro.md
+  - Разработка: dev.md
+  - Тестирование: tests.md
+  - Сборка: building.md
+  - Непрерывная интеграция: ci.md
+  - Деплой: deploy.md
+  - Нагрузочное тестирование: load_testing.md
+  - Вопросы-ответы: faq.md
+  - Инструменты: tools.md
+  - Зависимости: requirements.md
+
+theme:
+  name: material
+  language: ru
+  features:
+    - search.suggest
+    - search.highlight
+    - search.share
+
+plugins:
+  - search:
+      lang:
+        - ru
+        - en
+      separator: '[\s\-\.]+'
+      prebuild_index: true
+
+markdown_extensions:
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.tabbed
+  - pymdownx.details
+  - def_list
